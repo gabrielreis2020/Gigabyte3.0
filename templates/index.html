@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Preços</title>
+</head>
+<body>
+        <a class='add-btn' href='add'>
+            <button>Adicionar na Tabela</button>
+        </a>
+        {% for produtos, preco in Tabela %}            
+            <a href="/prod/{{loop.index0}}">
+            <h1>Produto:{{produtos}}</h1>
+      
+        {% endfor %}
+</body>
+</html>
